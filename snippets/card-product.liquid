@@ -361,7 +361,8 @@
         class="card__inner{% if settings.card_style == 'standard' %} color-{{ settings.card_color_scheme }} gradient{% endif %} ratio"
         style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
       >
-        <div class="card__media {% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
+        <div class="card__media {% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}"
+        style="{% if media_aspect_ratio == 'portrait' %} top: 3rem; {% endif %}">
           <div class="media media--transparent">
             {%- if placeholder_image -%}
               {{ placeholder_image | placeholder_svg_tag: 'placeholder-svg' }}
