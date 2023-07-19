@@ -50,6 +50,11 @@
   padding: 1rem;
 }
 
+.localization-form__country_flag {
+  display: flex;
+  align-items: center;
+} 
+
 .localization-form__currency {
   display: inline-block;
 }
