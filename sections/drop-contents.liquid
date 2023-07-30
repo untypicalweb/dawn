@@ -1,0 +1,88 @@
+<div class="grid-container">
+  <div class="centered-content center mt-5">
+    <h2 style="font-size: 45px;" class="fugaz-one">Discover The Treasures!</h2>
+    <p class="source-code">
+      Unleash the excitement! Our Pokemon Mystery Packs hold 5 heart-pounding Booster Packs from legendary series below.
+      But wait, half of them hide a £30 XY Evolutions pack! Will luck favour you? Open the door to destiny now!
+    </p>
+  </div>
+</div>
+
+<div class="center mb-4">
+  <form method="post" action="/cart/add">
+    <input name="id" value="46071411376431" type="hidden">
+    <input min="1" type="hidden" id="quantity" name="quantity" value="1">
+    <input class="poke-btn mr-1" name="add" value="BUY NOW" type="submit">
+  </form>
+</div>
+
+<div class="grid-container">
+  <div class="centered-content center">
+    <div class="image-grid">
+      <img
+        class="image"
+        src="https://imguscdn.gamespress.com/cdn/files/PokemonAmerica/2021/11/022238-35111fc5/Pokemon_TCG_Sword_Shield%E2%80%94Brilliant_Stars_Logo.png?w=240&mode=max&otf=y&quality=90&format=png&bgcolor=transparent&ex=2023-09-01+03%3A00%3A00&sky=7a2b01c7c059e8a1acf89dd6ca2df3b7e0c90a0a13305f9a05aa95c0161e6e3d"
+        alt="Image 1"
+      >
+      <img
+        class="image"
+        src="https://img-cdn-eu.gamespress.com/files/Pokemon/2016/09/na-1-20160921150708/XY12_logo_EN_cmyk.png?sv=2018-03-28&sr=b&sig=52DC8jvfiBvkhWvKhQAWh5asLF7qz%2FwKXEQLlzG9JaE%3D&se=2023-09-01T02%3A00%3A00Z&sp=r&rsct=application%2Foctet-strem&rscd=attachment&lightbox=y&ex=2023-09-01+03%3A00%3A00&sky=85521e3af391e8b90c02be9a8903a87d9f9a424e66b6525487408e3bc100eba2"
+        alt="Image 6"
+      >
+      <img
+        class="image"
+        src="https://img-cdn-us.gamespress.com/files/PokemonAmerica/2023/05/231353-c5d94bb0/Pokemon_TCG_Scarlet_Violet%E2%80%94Obsidian_Flames_Logo.png?sv=2018-03-28&sr=b&sig=d4D7Cbo9JssdKoBXpgE0R7wowsodFkLCiSQMtzfNrbg%3D&se=2023-09-01T02%3A00%3A00Z&sp=r&rsct=application%2Foctet-strem&rscd=attachment&lightbox=y&ex=2023-09-01+03%3A00%3A00&sky=66fdc4cf890f89b4fffb15a09afd677f60a00731b2989b7b5dd98a32ca338b76"
+        alt="Image 2"
+      >
+      <img
+        class="image"
+        src="https://tcg.pokemon.com/assets/img/sv-expansions/paldea-evolved/logo/en-us/sv02-header-logo.png"
+        alt="Image 3"
+      >
+      <img
+        class="image"
+        src="https://img-cdn-us.gamespress.com/files/PokemonAmerica/2022/12/081804-015b3c8d/Pokemon_TCG_Scarlet_Violet_Logo.png?sv=2018-03-28&sr=b&sig=NyC0sFpIQ%2F5hlepBU%2F%2BAQXxSXjTpOT2vljwP69eQAeU%3D&se=2023-09-01T02%3A00%3A00Z&sp=r&rsct=application%2Foctet-strem&rscd=attachment&lightbox=y&ex=2023-09-01+03%3A00%3A00&sky=f437c748aa9dc4654c423490c0763aa135911e2a93fd5e1fb8899e9ed0738c5e"
+        alt="Image 4"
+      >
+      <img
+        class="image"
+        src="https://primary.jwwb.nl/public/h/t/i/temp-zjpebgcobmaxydcmrfwb/8b07ua/image-139.png"
+        alt="Image 5"
+      >
+    </div>
+  </div>
+</div>
+
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr min(80%, 900px) 1fr;
+    gap: 20px; /* Adjust the gap as needed */
+  }
+
+  .centered-content {
+    grid-column: 2;
+    max-width: 900px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px; /* Adjust the gap between images */
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Adjust the image size as needed */
+  }
+
+  /* Media query for mobile devices */
+  @media (max-width: 600px) {
+    .image-grid {
+      grid-template-columns: 1fr; /* Display as a single column on mobile */
+    }
+  }
+</style>

@@ -1,0 +1,79 @@
+<div class="grid-container">
+  <div class="centered-content center mt-5">
+    <h2 style="font-size: 45px;" class="fugaz-one">How it Works!</h2>
+    <p class="source-code">
+      Unveil the excitement of our enigmatic mystery packs, each crafted independently with an air of mystique. Our
+      pickers work their magic, shrouding the contents of each pack in secrecy, ensuring that not even they know what
+      lies within. Brace yourself for the ultimate thrill, as you'll receive a completely random pack, teeming with
+      surprises!
+    </p>
+  </div>
+</div>
+
+<div class="center">
+  <form method="post" action="/cart/add">
+    <input name="id" value="46071411376431" type="hidden">
+    <input min="1" type="hidden" id="quantity" name="quantity" value="1">
+    <input class="poke-btn mr-1" name="add" value="BUY NOW" type="submit">
+  </form>
+</div>
+
+<div class="grid-container">
+  <div class="centered-content center">
+    <div class="steps-grid">
+      <div>
+        <h3 style="font-size: 30px;" class="fugaz-one">Order</h3>
+        <p class="source-code">Place your order on our website today and our team will ship it out the same day!*</p>
+      </div>
+      <div>
+        <h3 style="font-size: 30px;" class="fugaz-one">Ships</h3>
+        <p class="source-code">
+          All orders get NEXT DAY free shipping, so you don’t have to wait long to open your mystery pack.
+        </p>
+      </div>
+      <div>
+        <h3 style="font-size: 30px;" class="fugaz-one">Open</h3>
+        <p class="source-code">
+          Open your pack and find out if you’re one of the lucky ones to get this drop’s special booster pack.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="grid-container">
+  <div class="centered-content center">
+    <small
+      >*All parcels are sent using next day delivery. Orders placed on the weekend might have to wait a bit longer.
+      Unfortunately shipping is out of our hands once it’s left our warehouse.</small
+    >
+  </div>
+</div>
+
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr min(80%, 900px) 1fr;
+    gap: 20px; /* Adjust the gap as needed */
+  }
+
+  .centered-content {
+    grid-column: 2;
+    max-width: 900px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px; /* Adjust the gap between images */
+  }
+
+  /* Media query for mobile devices */
+  @media (max-width: 600px) {
+    .steps-grid {
+      grid-template-columns: 1fr; /* Display as a single column on mobile */
+    }
+  }
+</style>

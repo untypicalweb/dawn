@@ -1,0 +1,40 @@
+{% assign dropTitleFont = settingsData.sections['drop-title'].settings.drop_title_font.default %}
+
+<div class="center mb-5">
+  <h1 class="fugaz-one" style="line-height: 60px; font-size: 60px; font-weight: bold; margin: 0 auto 15px;">
+    <span style="color: #2189BF;">X</span><span style="color: #FF2820;">Y</span><br>
+    Evolutions Drop
+  </h1>
+
+  <div class="center mb-2 source-code" style="font-size: 18px; font-family: {{dropTitleFont}}; line-height: 26px;">
+    {% assign product = all_products['poke-mystery-pack'] %}
+    Only
+    <span style="font-size: 40px; font-weight: bold; color: #27d897;">
+      {{- product.variants[0].inventory_quantity -}}
+    </span>
+    left!<br>
+    + Free Next Day Shipping
+  </div>
+
+  <form method="post" action="/cart/add">
+    <input name="id" value="46071411376431" type="hidden">
+    <input min="1" type="hidden" id="quantity" name="quantity" value="1">
+    <input class="poke-btn mr-1" name="add" value="BUY NOW" type="submit">
+  </form>
+</div>
+
+{% schema %}
+{
+  "name": "Drop Title",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "font_picker",
+      "id": "drop_title_font",
+      "label": "Drop Title Font",
+      "default": "source_code_pro_n4"
+    }
+  ]
+}
+{% endschema %}

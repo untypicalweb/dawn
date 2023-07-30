@@ -1,0 +1,118 @@
+<div class="grid-container">
+  <div class="centered-content center mt-5">
+    <h2 style="font-size: 45px;" class="fugaz-one">Top Cards!</h2>
+    <p class="source-code">
+      Unearth top treasures like Evolutions Charizard or Lugia VStar. Luck awaits as you crack open our mystery packs.
+      Seek your fortune and claim legendary cards as your own!
+    </p>
+  </div>
+</div>
+
+<div class="center mb-4">
+  <form method="post" action="/cart/add">
+    <input name="id" value="46071411376431" type="hidden">
+    <input min="1" type="hidden" id="quantity" name="quantity" value="1">
+    <input class="poke-btn mr-1" name="add" value="BUY NOW" type="submit">
+  </form>
+</div>
+
+<div class="grid-container">
+  <div class="centered-content center">
+    <div class="cards-grid">
+      <div>
+        <img
+          class="card"
+          src="https://den-cards.pokellector.com/340/Charizard-VSTAR.SWSH09.174.42870.png"
+          alt="Image 4"
+        >
+        <h3 class="fugaz-one">PSA 10: £199</h3>
+      </div>
+      <div>
+        <img
+          class="card"
+          src="https://assets.pokemon.com/assets/cms2/img/cards/web/XY12/XY12_EN_11.png"
+          alt="Image 5"
+        >
+        <h3 class="fugaz-one">PSA 10: £1,499</h3>
+      </div>
+      <div>
+        <img
+          class="card"
+          src="https://assets.pokemon.com/assets/cms2/img/cards/web/SWSH3/SWSH3_EN_20.png"
+          alt="Image 3"
+        >
+        <h3 class="fugaz-one">PSA 10: £100</h3>
+      </div>
+      <div>
+        <img
+          class="card"
+          src="https://limitlesstcg.nyc3.digitaloceanspaces.com/tpci/SIT/SIT_139_R_EN_LG.png"
+          alt="Image 2"
+        >
+        <h3 class="fugaz-one">PSA 10: £49.99</h3>
+      </div>
+      <div>
+        <img
+          class="card"
+          src="https://den-cards.pokellector.com/367/Iono.PAL.269.48046.png"
+          alt="Image 6"
+        >
+        <h3 class="fugaz-one">PSA 10: £350</h3>
+      </div>
+      <div>
+        <img
+          class="card"
+          src="https://den-cards.pokellector.com/373/Charizard-ex.OBF.223.48657.png"
+          alt="Image 1"
+        >
+        <h3 class="fugaz-one">PSA 10: £??</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr min(80%, 900px) 1fr;
+    gap: 20px; /* Adjust the gap as needed */
+  }
+
+  .centered-content {
+    grid-column: 2;
+    max-width: 900px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px; /* Adjust the gap between images */
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Adjust the image size as needed */
+  }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px; /* Adjust the gap between images */
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Media query for mobile devices */
+  @media (max-width: 600px) {
+    .image-grid,
+    .cards-grid {
+      grid-template-columns: 1fr; /* Display as a single column on mobile */
+    }
+  }
+</style>
